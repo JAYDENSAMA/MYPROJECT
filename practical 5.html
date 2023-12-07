@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Admission Form</title>
+    <style>
+        body {
+            font-family: 'Lato', sans-serif;
+            margin: 10;
+            padding: 0;
+            background-image: url('https://wallpapers-hub.art/wallpaper-images/369082.jpg');
+            background-size: cover;
+            background-position: center;
+        }
+
+        .container {
+            font-family: 'Lato', sans-serif;
+            max-width: 700px;
+            margin: auto;
+            background-color: rgba(255, 255, 255, 0.8); 
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+        }
+
+        h1 {
+            text-align: center;
+            color: #007BFF;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        label {
+            font-weight: bold;
+        }
+
+        input[type="text"],
+        input[type="password"],
+        select {
+            width: 97%;
+            padding: 10px;
+            border: 1px solid #007BFF;
+            border-radius: 5px;
+        }
+
+        input[type="checkbox"] {
+            margin-right: 5px;
+        }
+
+        .radio-label {
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        .submit-button,
+        .reset-button {
+            font-family: 'Lato', sans-serif;
+            background-color: #007BFF;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease-in-out;
+        }
+
+        .reset-button {
+            background-color: #A3A3A3;
+        }
+
+        .submit-button:hover {
+            background-color: #0056b3;
+        }
+    </style>        
+    
+</head>
+<body>
+
+<div class="container">
+    <h1>Admission Form</h1>
+    <form action="submit_admission.php" method="post">
+        <div class="form-group">
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" required>
+        </div>
+        <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="text" id="email" name="email" required>
+        </div>
+        <div class="form-group">
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+        </div>
+        <div class="form-group">
+            <label for="course">Select Course:</label>
+            <select id="course" name="course">
+                <option value="software development">Software development</option>
+                <option value="Banking">Banking</option>
+                <option value="Statistics">Statistics</option>
+                <option value="Computer Science">Computer Science</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label>Choose Interests:</label><br>
+            <input type="checkbox" id="interest1" name="interests[]" value="programming">
+            <label for="interest1">Programming</label>
+            <input type="checkbox" id="interest2" name="interests[]" value="design">
+            <label for="interest2">Design</label>
+        </div>
+        <div class="form-group">
+            <label>Gender:</label><br>
+            <label class="radio-label">
+                <input type="radio" id="male" name="gender" value="male">
+                Male
+            </label>
+            <label class="radio-label">
+                <input type="radio" id="female" name="gender" value="female">
+                Female
+            </label>
+        </div>
+        <div class="form-group">
+            <input type="submit" class="submit-button" value="Submit">
+            <input type="reset" class="reset-button" value="Reset">
+        </div>
+    </form>
+</div>
+
+</body>
+</html>

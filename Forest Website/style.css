@@ -1,0 +1,215 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    
+}
+
+body {
+    background: #f9f9f9;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 100px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 2em;
+    color: #359381;
+    pointer-events: none;
+    margin-right: 270px;
+}
+
+.navigation a {
+    text-decoration: none;
+    color: #359381;
+    padding: 6px 15px;
+    border-radius: 20px;
+    margin: 0 10px;
+    font-weight: 600;
+}
+
+.navigation a:hover,
+.navigation a.active 
+{ 
+    background: #359381;
+    color: #fff;
+}
+
+.parallax 
+{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#text 
+{
+position: absolute;
+font-size: 5em;
+color: #fff;
+text-shadow: 2px 2px 4px rgba(0,0,0,.2);
+}
+
+.parallax img 
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    pointer-events: none;
+}
+
+.sec {
+    position: relative; background:#003329;
+    margin-top: 20px;
+    padding: 100px;
+}
+
+.sec h2 {
+    font-size: 3em;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.sec p 
+{
+    font-size: 1em;
+    color: #fff;
+    font-weight: 300;
+}
+
+#about {
+    position: relative; 
+    background:#003329;
+    margin-top: 0px;
+    padding: 100px;
+
+}
+
+#about h2 {
+    font-size: 3em;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+#about p 
+{
+    font-size: 1em;
+    color: #fff;
+    font-weight: 300;
+    
+}
+
+
+#services {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background:#003329;
+    padding-bottom: 50px;
+}
+
+.service {
+    width: 280px;
+    height: 420px;
+    padding: 30px;
+    text-align: center;
+    background-color: #f0f0f0;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+    margin: 20px; 
+}
+
+
+.service:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+
+.service img {
+    max-width: 100%;
+    border-radius: 6px;
+    margin-bottom: 20px;
+}
+
+.service h2 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    color: black;
+}
+
+.service p {
+    font-size: 16px;
+    color: #444;
+    line-height: 1.5;
+}
+
+
+  
+
+#contact {
+    background-color: #003329;
+    padding: 80px 300px 80px 300px;
+    text-align: center;
+    color: white;
+}
+  
+  
+.form-group label {
+    display: block;
+    margin-bottom: 6px;
+    color: white;
+}
+  
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 2px solid #fff;
+    border-radius: 5px;
+    background-color: #fff;
+    color: #003329;
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+    box-sizing: border-box;
+}
+  
+
+#contact button[type="submit"] {
+    background-color: #6ab04c; 
+    color: white; 
+    padding: 12px 24px; 
+    border: none; 
+    border-radius: 5px; 
+    cursor: pointer; 
+    font-size: 16px; 
+    font-weight: bold; 
+    transition: background-color 0.3s ease-in-out;
+}
+
+#contact button[type="submit"]:hover {
+    background-color: #4f8742; 
+
+
+html {
+    scroll-behavior: smooth;
+}
